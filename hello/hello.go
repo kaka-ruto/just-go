@@ -13,16 +13,20 @@ func Hello(name string, language string) string {
 		name = "world"
 	}
 
-	prefix := englishPrefixName
+	return greetingPrefix(language) + name
+}
 
+func greetingPrefix(language string) (prefix string) {
 	switch language {
 	case spanish:
 		prefix = spanishPrefixName
 	case french:
 		prefix = frenchPrefixName
+	default:
+		prefix = englishPrefixName
 	}
 
-	return prefix + name
+	return
 }
 
 func main() {
