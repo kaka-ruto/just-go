@@ -1,6 +1,7 @@
 package main
 
-func Sum(numbers [5]int) int {
+// Sum returns the sum of any size of a collection
+func Sum(numbers []int) int {
 	sum := 0
 
 	for _, number := range numbers {
