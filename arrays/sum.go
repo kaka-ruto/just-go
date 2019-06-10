@@ -11,6 +11,7 @@ func Sum(numbers []int) int {
 	return sum
 }
 
+// SumAll returns the sum of two or more arrays
 func SumAll(numbersToSum ...[]int) []int {
 	var sums []int
 
@@ -21,6 +22,7 @@ func SumAll(numbersToSum ...[]int) []int {
 	return sums
 }
 
+// SumAllTails returns the sum of all tails in the given arrays
 func SumAllTails(numbersToSum ...[]int) []int {
 	var sums []int
 
