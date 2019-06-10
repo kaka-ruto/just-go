@@ -16,3 +16,16 @@ func TestSum(t *testing.T) {
 	})
 
 }
+
+func TestSumAll(t *testing.T) {
+	first_slice := []int{1, 2}
+	second_slice := []int{0, 9}
+	sum := []int{3, 9}
+
+	got := SumAll(first_slice, second_slice)
+	want := sum
+
+	if got != want {
+		t.Errorf("got '%v' want '%v'", got, want)
+	}
+}
