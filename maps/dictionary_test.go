@@ -3,9 +3,9 @@ package main
 import "testing"
 
 func TestSearch(t *testing.T) {
-	dictionary := map[string]string{"Time": "To Go"}
+	dictionary := Dictionary{"Time": "To Go"}
 
-	got := Search(dictionary, "Time")
+	got := dictionary.Search("Time")
 	expected := "To Go"
 
 	assertStrings(t, got, expected)
